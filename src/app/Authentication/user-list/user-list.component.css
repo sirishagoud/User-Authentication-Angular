@@ -1,0 +1,19 @@
+table {
+    width: 100%;
+}
+
+.mat-header-cell {
+    background-color: rgb(80, 80, 248);
+}
+
+.backIcon {
+    font-size: 30px;
+}
+
+.editIcon {
+    color: rgb(80, 80, 248);
+}
+
+.deleteIcon {
+    color: red;
+}

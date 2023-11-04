@@ -1,0 +1,41 @@
+<div class="flex justify-end m-4">
+    <button mat-raised-button color="primary" [routerLink]="['/userList']"> Users List</button>
+</div>
+
+
+<div class="flex justify-center mt-14">
+
+    <mat-card class="example-card">
+        <div class="grid grid-cols-2">
+            <div >
+                <img src="../../../assets/login.jpg" class="rounded-lg m-5" alt="login" />
+            </div>
+    
+            <div class="p-5">
+                <div class="text-3xl font-bold text-center text-[#3f51b5]">Login</div>
+                <form [formGroup]="loginFormGroup" class="flex flex-col m-5">
+    
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Enter your Email" formControlName="email">
+                        <mat-icon matSuffix class="icon">mail</mat-icon>
+                    </mat-form-field>
+    
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Enter your Password" formControlName="password">
+                        <mat-icon matSuffix class="icon">lock</mat-icon>
+                    </mat-form-field>
+    
+                    <button mat-raised-button (click)="login()" color="primary" [disabled]="loginFormGroup.invalid">Login</button>
+                    <div class="flex justify-center m-4">Don't have an account <a [routerLink]="['/']" class="
+                ml-2 underline text-[#3f51b5]">
+                            Register
+                        </a>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+       
+    </mat-card>
+
+</div>

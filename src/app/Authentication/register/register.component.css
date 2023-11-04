@@ -1,0 +1,12 @@
+.example-card {
+    width: 75%;
+  }
+
+  .icon {
+    color: rgb(80, 80, 248);
+
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: yellow !important;
+  }

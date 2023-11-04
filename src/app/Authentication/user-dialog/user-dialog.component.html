@@ -1,0 +1,33 @@
+<div class="flex justify-between bg-[#3f51b5] p-3">
+    <div class="text-xl font-bold text-center text-white">Edit User</div>
+    <button color="primary" [routerLink]="['/userList']" (click)="onClose()"><mat-icon class="closeIcon">close</mat-icon></button>
+</div>
+
+<div class="flex justify-center mt-6">
+
+    <div>
+        
+        <form [formGroup]="userEditFormGroup" class="flex flex-col m-5">
+
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Enter your Name" formControlName="name">
+                <mat-icon matSuffix class="icon">person</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Enter your Email" formControlName="email">
+                <mat-icon matSuffix class="icon">mail</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Enter your Password" formControlName="password">
+                <mat-icon matSuffix class="icon">lock</mat-icon>
+            </mat-form-field>
+
+            <button mat-raised-button (click)="register()" color="primary"
+                [disabled]="userEditFormGroup.invalid">Edit</button>
+
+        </form>
+    </div>
+
+</div>
